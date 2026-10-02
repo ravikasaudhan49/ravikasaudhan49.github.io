@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ravi Kasaudhan — AI Engineer (Agentic AI · RAG · Real-time Voice)</title>
+  <meta name="description" content="Ravi Kasaudhan is an AI engineer with 4 years of experience building agentic AI, RAG and real-time conversational voice and chat systems on Python, FastAPI, Kafka, Redis, Azure and GCP.">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#151312">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ravi Kasaudhan — AI Engineer">
+  <meta property="og:description" content="Agentic AI · RAG · Real-time voice. 4 years building low-latency AI systems on cloud-native backends.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></symbol>
+      <symbol id="i-folder" viewBox="0 0 24 24"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"/></symbol>
+      <symbol id="i-briefcase" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></symbol>
+      <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+      <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+      <symbol id="i-bot" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2M20 14h2M15 13v2M9 13v2"/></symbol>
+      <symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+      <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+      <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></symbol>
+      <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4M22 5h-4"/></symbol>
+      <symbol id="i-up" viewBox="0 0 24 24"><path d="m18 15-6-6-6 6"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- Floating section dock -->
+  <nav class="dock" aria-label="Sections">
+    <a href="#home" data-label="Home" aria-label="Home"><svg class="icon"><use href="#i-home"/></svg></a>
+    <a href="#projects" data-label="Projects" aria-label="Projects"><svg class="icon"><use href="#i-folder"/></svg></a>
+    <a href="#experience" data-label="Experience" aria-label="Experience"><svg class="icon"><use href="#i-briefcase"/></svg></a>
+    <a href="#stack" data-label="Tech stack" aria-label="Tech stack"><svg class="icon"><use href="#i-code"/></svg></a>
+    <a href="#achievements" data-label="Achievements" aria-label="Achievements"><svg class="icon"><use href="#i-trophy"/></svg></a>
+    <a href="#contact" data-label="Contact" aria-label="Contact"><svg class="icon"><use href="#i-mail"/></svg></a>
+  </nav>
+
+  <div class="layout">
+    <!-- Sticky profile card -->
+    <aside class="profile" aria-label="Profile">
+      <div class="profile-card" data-tilt>
+        <svg class="arc arc-top" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="96"/></svg>
+        <svg class="arc arc-side" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="96"/></svg>
+        <span class="badge-java" aria-hidden="true"><svg class="icon"><use href="#i-sparkles"/></svg></span>
+
+        <div class="avatar">
+          <span class="avatar-initials" aria-hidden="true">RK</span>
+          <img src="assets/profile.jpg" alt="Portrait of Ravi Kasaudhan" width="616" height="700" onerror="this.remove()">
+        </div>
+
+        <p class="profile-name">Ravi Kasaudhan</p>
+        <p class="profile-role">AI Engineer<br><span>Agentic AI · RAG · Voice AI</span></p>
+        <p class="profile-loc"><svg class="icon"><use href="#i-award"/></svg> Microsoft Certified Azure AI Engineer</p>
+
+        <ul class="socials">
+          <li><a href="https://github.com/ravikasaudhan49" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon"><use href="#i-github"/></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/ravi-kasaudhan/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a></li>
+          <li><a href="mailto:ravikasaudhan4923@gmail.com" aria-label="Email"><svg class="icon"><use href="#i-mail"/></svg></a></li>
+        </ul>
+
+        <a class="btn btn-ink" href="assets/Ravi_Kasaudhan_Resume.pdf" download>
+          <svg class="icon"><use href="#i-download"/></svg> Download résumé
+        </a>
+      </div>
+    </aside>
+
+    <main id="main">
+      <!-- ============ HOME ============ -->
+      <section id="home" class="section hero" aria-labelledby="hero-title">
+        <p class="now-pill reveal"><span class="pulse" aria-hidden="true"></span> Software Engineer at Nextiva</p>
+
+        <h1 id="hero-title" class="display reveal">
+          <span class="sr-only">Ravi Kasaudhan, </span>
+          <span>Agentic AI</span>
+          <span class="dim">Engineer</span>
+        </h1>
+
+        <p class="lede reveal">
+          AI engineer with <strong>4 years</strong> of experience building <strong>agentic AI, RAG and real-time voice
+          and chat systems</strong> on scalable cloud-native backends with Python, FastAPI, Kafka, Redis, Azure and GCP.
+          I rebuilt a RAG ingestion pipeline to cut costs by ~60% with sub-400&nbsp;ms retrieval, and shipped semantic
+          search that made finding information 80% faster.
+        </p>
+
+        <dl class="stats reveal">
+          <div class="stat"><dt>Years of experience</dt><dd><span data-count="4">4</span></dd></div>
+          <div class="stat"><dt>Lower ingestion cost</dt><dd><span class="unit pre">~</span><span data-count="60">60</span><span class="unit">%</span></dd></div>
+          <div class="stat"><dt>Faster information retrieval</dt><dd><span data-count="80">80</span><span class="unit">%</span></dd></div>
+          <div class="stat"><dt>Knowledge retrieval latency</dt><dd><span class="unit pre">&lt;</span><span data-count="400">400</span><span class="unit">ms</span></dd></div>
+        </dl>
+
+        <div class="focus reveal">
+          <article class="focus-card orange">
+            <span class="focus-icon"><svg class="icon"><use href="#i-bot"/></svg></span>
+            <div>
+              <h2>Agentic AI &amp; RAG</h2>
+              <p>LLM orchestration and tool calling with LangGraph, ADK and MCP, grounded by vector and hybrid search.</p>
+            </div>
+            <svg class="focus-bg" aria-hidden="true"><use href="#i-bot"/></svg>
+          </article>
+          <article class="focus-card lime">
+            <span class="focus-icon"><svg class="icon"><use href="#i-mic"/></svg></span>
+            <div>
+              <h2>Real-time Voice &amp; Cloud</h2>
+              <p>Low-latency voice pipelines and event-driven backends with FastAPI, Kafka and Redis on GCP and Azure.</p>
+            </div>
+            <svg class="focus-bg" aria-hidden="true"><use href="#i-mic"/></svg>
+          </article>
+        </div>
+
+        <!-- Interactive "API" console -->
+        <div class="console reveal" aria-label="Interactive API console about Ravi">
+          <div class="console-bar">
+            <span class="console-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="console-title">ravi-api · FastAPI</span>
+          </div>
+          <div class="console-endpoints" role="group" aria-label="Choose an endpoint">
+            <button class="endpoint" type="button" data-endpoint="profile" aria-pressed="true"><span class="verb">GET</span>/api/v1/ravi/profile</button>
+            <button class="endpoint" type="button" data-endpoint="stack" aria-pressed="false"><span class="verb">GET</span>/stack</button>
+            <button class="endpoint" type="button" data-endpoint="impact" aria-pressed="false"><span class="verb">GET</span>/impact</button>
+          </div>
+          <p class="console-status" id="console-status"><span class="ok">200 OK</span> · application/json</p>
+          <pre class="console-out" id="console-out" tabindex="0">{
+  "name": "Ravi Kasaudhan",
+  "role": "AI Engineer",
+  "focus": "Agentic AI · RAG · Real-time Voice"
+}</pre>
+        </div>
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Agentic AI</span><span class="fill">✦</span><span>RAG</span><span class="fill">✦</span><span>Voice AI</span><span class="fill">✦</span><span>LLMs</span><span class="fill">✦</span><span>FastAPI</span><span class="fill">✦</span><span>Kafka</span><span class="fill">✦</span>
+          <span>Agentic AI</span><span class="fill">✦</span><span>RAG</span><span class="fill">✦</span><span>Voice AI</span><span class="fill">✦</span><span>LLMs</span><span class="fill">✦</span><span>FastAPI</span><span class="fill">✦</span><span>Kafka</span><span class="fill">✦</span>
+        </div>
+      </div>
+
+      <!-- ============ PROJECTS ============ -->
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <h2 id="projects-title" class="display-2 reveal"><span>Featured</span><span class="dim">Projects</span></h2>
+        <p class="section-intro reveal">Voice agents, agentic tooling and retrieval systems, with a quick look at how each one fits together.</p>
+
+        <div class="projects">
+          <!-- Voicebot runtime -->
+          <article class="project reveal" data-spotlight>
+            <div class="project-visual">
+              <div class="pv-bar"><span>voicebot-runtime · asyncio</span><span>fig. 01</span></div>
+              <div class="pv-canvas">
+              <svg viewBox="0 10 300 172" role="img" aria-label="Architecture: caller audio streams over a WebSocket into voice activity detection, speech-to-text, an LLM with tools and text-to-speech back to the caller; Gemini Live provides a native speech-to-speech mode and Redis coordinates calls.">
+                <path class="d-edge" d="M72 36H112"/>
+                <path class="d-edge" d="M192 36H232"/>
+                <path class="d-edge hot" d="M263 52V84"/>
+                <path class="d-edge hot" d="M232 100H192"/>
+                <path class="d-edge hot" d="M112 100H72"/>
+                <path class="d-edge hot" d="M39 84V52"/>
+                <path class="d-edge lime" d="M152 116V148"/>
+                <path class="d-edge" d="M258 148V116"/>
+                <g class="d-node"><rect x="6" y="20" width="66" height="32" rx="9"/><text x="39" y="36">Caller</text></g>
+                <g class="d-node"><rect x="112" y="20" width="80" height="32" rx="9"/><text x="152" y="36">WebSocket</text></g>
+                <g class="d-node"><rect x="232" y="20" width="62" height="32" rx="9"/><text x="263" y="36">VAD</text></g>
+                <g class="d-node"><rect x="6" y="84" width="66" height="32" rx="9"/><text x="39" y="100">TTS</text></g>
+                <g class="d-node hl"><rect x="112" y="84" width="80" height="32" rx="9"/><text x="152" y="100">LLM · tools</text></g>
+                <g class="d-node"><rect x="232" y="84" width="62" height="32" rx="9"/><text x="263" y="100">STT</text></g>
+                <g class="d-node lime"><rect x="6" y="148" width="204" height="28" rx="9"/><text x="108" y="162">Gemini Live · speech-to-speech</text></g>
+                <g class="d-node"><rect x="222" y="148" width="72" height="28" rx="9"/><text x="258" y="162">Redis</text></g>
+              </svg>
+              </div>
+              <div class="pv-bar pv-foot"><span>barge-in · turn detection · process-per-call</span></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span class="tag">Voice AI</span></div>
+              <h3>Real-time AI Voicebot Runtime</h3>
+              <p class="project-sub">The engine behind live phone-call voice agents</p>
+              <ul class="points">
+                <li>Streams live call audio over WebSockets through a real-time <strong>VAD → STT → LLM → TTS</strong> pipeline with barge-in interruption handling and turn detection.</li>
+                <li>Dual-mode design: composed STT → LLM → TTS or native speech-to-speech with Gemini Live, plus LLM tool calling and a scalable process-per-call architecture on GCP with Redis coordination.</li>
+              </ul>
+              <ul class="chips" aria-label="Technologies">
+                <li>Python</li><li>asyncio</li><li>WebSockets</li><li>Deepgram</li><li>Gemini Live</li><li>Redis</li><li>GCP</li>
+              </ul>
+              <p class="project-note"><svg class="icon"><use href="#i-briefcase"/></svg> Built at Nextiva</p>
+            </div>
+          </article>
+
+          <!-- Agentic AI editor -->
+          <article class="project reveal" data-spotlight>
+            <div class="project-visual">
+              <div class="pv-bar"><span>ai-editor · fastapi + kafka</span><span>fig. 02</span></div>
+              <div class="pv-canvas">
+              <svg viewBox="0 2 300 180" role="img" aria-label="Architecture: a user's natural-language request goes to a router that hands off to specialist agents for AI employees, skills and functions, workflows, and knowledge; an LLM-as-judge evaluation layer verifies behaviour.">
+                <path class="d-edge" d="M72 100H92"/>
+                <path class="d-edge hot" d="M156 100C168 100 166 23 178 23"/>
+                <path class="d-edge hot" d="M156 100C168 100 166 62 178 62"/>
+                <path class="d-edge hot" d="M156 100H178"/>
+                <path class="d-edge hot" d="M156 100C168 100 166 139 178 139"/>
+                <path class="d-edge lime" d="M124 116V148"/>
+                <g class="d-node"><rect x="6" y="84" width="66" height="32" rx="9"/><text x="39" y="100">User</text></g>
+                <g class="d-node hl"><rect x="92" y="84" width="64" height="32" rx="9"/><text x="124" y="100">Router</text></g>
+                <g class="d-node"><rect x="178" y="8" width="116" height="30" rx="9"/><text x="236" y="23">AI Employees</text></g>
+                <g class="d-node"><rect x="178" y="47" width="116" height="30" rx="9"/><text x="236" y="62">Skills &amp; Functions</text></g>
+                <g class="d-node"><rect x="178" y="85" width="116" height="30" rx="9"/><text x="236" y="100">Workflows</text></g>
+                <g class="d-node"><rect x="178" y="124" width="116" height="30" rx="9"/><text x="236" y="139">Knowledge</text></g>
+                <g class="d-node lime"><rect x="6" y="148" width="150" height="28" rx="9"/><text x="81" y="162">LLM-as-judge evals</text></g>
+              </svg>
+              </div>
+              <div class="pv-bar pv-foot"><span>tool calling · specialist routing · claude</span></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span class="tag">Agentic AI</span></div>
+              <h3>Agentic Conversational AI Editor</h3>
+              <p class="project-sub">Configure a whole platform by just asking</p>
+              <ul class="points">
+                <li>Updates platform settings from natural language via LLM tool calling, with <strong>specialist-based routing</strong> across AI Employees, skills, functions, workflows, handoffs and knowledge sources.</li>
+                <li>Local evaluation layer with scenario simulation, tool-call verification and automated <strong>LLM-as-judge</strong> scoring to validate agent behaviour.</li>
+              </ul>
+              <ul class="chips" aria-label="Technologies">
+                <li>FastAPI</li><li>WebSockets</li><li>Kafka</li><li>Redis</li><li>MongoDB</li><li>Anthropic Claude</li>
+              </ul>
+              <p class="project-note"><svg class="icon"><use href="#i-briefcase"/></svg> Built at Nextiva</p>
+            </div>
+          </article>
+
+          <!-- Product search RAG -->
+          <article class="project reveal" data-spotlight>
+            <div class="project-visual">
+              <div class="pv-bar"><span>product-search · rag</span><span>fig. 03</span></div>
+              <div class="pv-canvas">
+              <svg viewBox="0 10 300 172" role="img" aria-label="Architecture: Excel and CSV rows are embedded and stored in MongoDB Atlas; a natural-language query is turned into JSON filters by Gemini Flash, run as a hybrid vector and text search, and served by an async FastAPI service.">
+                <path class="d-edge" d="M82 34H98"/>
+                <path class="d-edge" d="M180 34H196"/>
+                <path class="d-edge" d="M245 50V84"/>
+                <path class="d-edge" d="M82 100H98"/>
+                <path class="d-edge hot" d="M180 100H196"/>
+                <path class="d-edge lime" d="M245 116V150"/>
+                <g class="d-node"><rect x="6" y="18" width="76" height="32" rx="9"/><text x="44" y="34">Excel / CSV</text></g>
+                <g class="d-node"><rect x="98" y="18" width="82" height="32" rx="9"/><text x="139" y="34">Embeddings</text></g>
+                <g class="d-node"><rect x="196" y="18" width="98" height="32" rx="9"/><text x="245" y="34">MongoDB Atlas</text></g>
+                <g class="d-node"><rect x="6" y="84" width="76" height="32" rx="9"/><text x="44" y="100">NL query</text></g>
+                <g class="d-node hl"><rect x="98" y="84" width="82" height="32" rx="9"/><text x="139" y="100">Gemini Flash</text></g>
+                <g class="d-node lime"><rect x="196" y="84" width="98" height="32" rx="9"/><text x="245" y="100">Hybrid search</text></g>
+                <g class="d-node"><rect x="98" y="150" width="196" height="28" rx="9"/><text x="196" y="164">FastAPI · asyncio</text></g>
+              </svg>
+              </div>
+              <div class="pv-bar pv-foot"><span>3072-dim embeddings · $vectorSearch + $search</span></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span class="tag">RAG · Search</span></div>
+              <h3>Product Search RAG System</h3>
+              <p class="project-sub">Ask questions of Excel &amp; CSV catalogues in plain English</p>
+              <ul class="points">
+                <li>RAG-based product search over Excel/CSV datasets on MongoDB Atlas with <strong>hybrid retrieval</strong> via <code>$vectorSearch</code> and <code>$search</code>.</li>
+                <li>3072-dim gemini-embedding-001 vectors, with Gemini 2.5 Flash turning natural-language questions into validated JSON filters and aggregations.</li>
+                <li>FastAPI retrieval service with asyncio concurrency and connection pooling for low-latency, scalable search.</li>
+              </ul>
+              <ul class="chips" aria-label="Technologies">
+                <li>FastAPI</li><li>MongoDB Atlas Vector Search</li><li>Vertex AI Gemini 2.5 Flash</li><li>gemini-embedding-001</li><li>Pydantic</li><li>asyncio</li>
+              </ul>
+              <p class="project-note"><svg class="icon"><use href="#i-sparkles"/></svg> Personal project</p>
+            </div>
+          </article>
+
+          <!-- Real estate price prediction -->
+          <article class="project reveal" data-spotlight>
+            <div class="project-visual">
+              <div class="pv-bar"><span>price-predictor · sklearn</span><span>fig. 04</span></div>
+              <div class="pv-canvas">
+              <svg viewBox="0 26 300 132" role="img" aria-label="Pipeline: Kaggle housing data is cleaned with NumPy and Pandas, explored with charts, and used to train a linear regression model served through a web app.">
+                <path class="d-edge" d="M86 56H106"/>
+                <path class="d-edge hot" d="M194 56H214"/>
+                <path class="d-edge" d="M150 72V112"/>
+                <path class="d-edge lime" d="M254 72V112"/>
+                <g class="d-node"><rect x="6" y="40" width="80" height="32" rx="9"/><text x="46" y="56">Kaggle data</text></g>
+                <g class="d-node"><rect x="106" y="40" width="88" height="32" rx="9"/><text x="150" y="56">Cleaning</text></g>
+                <g class="d-node hl"><rect x="214" y="40" width="80" height="32" rx="9"/><text x="254" y="56">Regression</text></g>
+                <g class="d-node"><rect x="106" y="112" width="88" height="32" rx="9"/><text x="150" y="128">EDA charts</text></g>
+                <g class="d-node lime"><rect x="214" y="112" width="80" height="32" rx="9"/><text x="254" y="128">Web app</text></g>
+              </svg>
+              </div>
+              <div class="pv-bar pv-foot"><span>bangalore home prices dataset</span></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span class="tag">Machine Learning</span></div>
+              <h3>Real Estate Price Prediction</h3>
+              <p class="project-sub">Web-based home price estimator for Bangalore</p>
+              <ul class="points">
+                <li>Web-based price prediction model built on the Bangalore home prices dataset from Kaggle.</li>
+                <li>Thorough cleaning and preprocessing with NumPy and Pandas, and a linear regression model in scikit-learn that predicts accurately on held-out test data.</li>
+              </ul>
+              <ul class="chips" aria-label="Technologies">
+                <li>NumPy</li><li>Pandas</li><li>scikit-learn</li><li>Matplotlib</li>
+              </ul>
+              <p class="project-note"><svg class="icon"><use href="#i-sparkles"/></svg> Personal project</p>
+            </div>
+          </article>
+        </div>
+
+        <a class="more-link reveal" href="https://github.com/ravikasaudhan49" target="_blank" rel="noopener">
+          More on GitHub <svg class="icon arrow"><use href="#i-arrow"/></svg>
+        </a>
+      </section>
+
+      <!-- ============ EXPERIENCE ============ -->
+      <section id="experience" class="section" aria-labelledby="experience-title">
+        <h2 id="experience-title" class="display-2 reveal"><span>4 Years of</span><span class="dim">Experience</span></h2>
+        <p class="section-intro reveal">From enterprise AI at EY to real-time conversational AI at Nextiva.</p>
+
+        <div class="jobs">
+          <article class="job open reveal">
+            <h3 class="job-h">
+              <button class="job-head" type="button" aria-expanded="true" aria-controls="job-nextiva">
+                <span class="job-logo current">NX</span>
+                <span class="job-title">
+                  <span class="job-co">Nextiva <span class="now-tag">Now</span></span>
+                  <span class="job-role">Software Engineer</span>
+                </span>
+                <span class="job-date">Aug 2025 — Present</span>
+                <svg class="icon job-chevron" aria-hidden="true"><use href="#i-chevron"/></svg>
+              </button>
+            </h3>
+            <div class="job-body" id="job-nextiva">
+              <div>
+                <div class="job-inner">
+                  <ul class="metrics" aria-label="Highlights">
+                    <li><strong>~60%</strong> lower ingestion cost</li>
+                    <li><strong>&lt;400 ms</strong> retrieval latency</li>
+                    <li><strong>3072-dim</strong> hybrid search</li>
+                  </ul>
+                  <ul class="points">
+                    <li>Built the core <strong>real-time voicebot runtime</strong>: live call audio over WebSockets through a VAD → STT → LLM → TTS pipeline with barge-in and turn detection, a native speech-to-speech mode on Gemini Live, LLM tool calling and a process-per-call architecture on GCP with Redis coordination.</li>
+                    <li>Built an <strong>agentic AI editor</strong> that updates platform settings from natural language through specialist-routed tool calling, with a local evaluation layer for scenario simulation, tool-call verification and LLM-as-judge scoring.</li>
+                    <li>Rebuilt the <strong>web-crawling RAG ingestion pipeline</strong> on Firecrawl, replacing a screenshot + HTML approach with Gemini and cutting ingestion cost by ~60% while improving throughput; Redis-hotloaded hybrid search over 3072-dim embeddings answers knowledge queries in under 400 ms.</li>
+                  </ul>
+                  <ul class="chips" aria-label="Technologies"><li>Python</li><li>asyncio</li><li>WebSockets</li><li>Deepgram</li><li>Gemini Live</li><li>FastAPI</li><li>Kafka</li><li>Redis</li><li>MongoDB</li><li>Claude</li><li>Firecrawl</li><li>GCP</li></ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="job reveal">
+            <h3 class="job-h">
+              <button class="job-head" type="button" aria-expanded="false" aria-controls="job-ey">
+                <span class="job-logo">EY</span>
+                <span class="job-title">
+                  <span class="job-co">EY</span>
+                  <span class="job-role">AI Engineer · promoted from Associate AI Engineer</span>
+                </span>
+                <span class="job-date">Aug 2023 — Aug 2025</span>
+                <svg class="icon job-chevron" aria-hidden="true"><use href="#i-chevron"/></svg>
+              </button>
+            </h3>
+            <div class="job-body" id="job-ey">
+              <div>
+                <div class="job-inner">
+                  <ul class="metrics" aria-label="Highlights">
+                    <li><strong>80%</strong> faster information retrieval</li>
+                    <li><strong>Promoted</strong> after one year</li>
+                    <li><strong>Teams</strong>-deployed AI bots</li>
+                  </ul>
+                  <p class="role-head">AI Engineer <span>Sep 2024 — Aug 2025</span></p>
+                  <ul class="points">
+                    <li><strong>Agentic IDP</strong>: extracts structured key-value data from unstructured and handwritten documents, with multi-model verification, logprobs-based confidence scoring, dynamic prompt refinement, Dataverse mapping and Ada/FAISS semantic search.</li>
+                    <li><strong>Video &amp; PDF QnA</strong> on Azure Video Indexer, GPT-4o and Azure AI Search: real-time semantic search that reduced information retrieval time by 80%.</li>
+                  </ul>
+                  <p class="role-head">Associate AI Engineer <span>Aug 2023 — Aug 2024</span></p>
+                  <ul class="points">
+                    <li><strong>Text2SQL</strong> with GPT-3.5: generates SQL from database schemas and natural-language questions, then validates, executes and turns results into natural-language insights.</li>
+                    <li>Multilingual <strong>translation &amp; summarisation bot</strong> on Azure AI Translator and Azure OpenAI, integrated through Logic Apps and Functions with Yellow AI and deployed in Microsoft Teams.</li>
+                    <li>Multiple AI-powered bots with integrated RPA, deployed to Microsoft Teams with Copilot Studio and Yellow AI.</li>
+                  </ul>
+                  <ul class="chips" aria-label="Technologies"><li>Semantic Kernel</li><li>GPT-4o</li><li>FAISS</li><li>Azure AI Search</li><li>LangChain</li><li>Azure OpenAI</li><li>Logic Apps</li><li>Azure Functions</li><li>Copilot Studio</li></ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="job reveal">
+            <h3 class="job-h">
+              <button class="job-head" type="button" aria-expanded="false" aria-controls="job-abi">
+                <span class="job-logo">AB</span>
+                <span class="job-title">
+                  <span class="job-co">Anheuser-Busch InBev</span>
+                  <span class="job-role">Intern</span>
+                </span>
+                <span class="job-date">Jan 2023 — Jul 2023</span>
+                <svg class="icon job-chevron" aria-hidden="true"><use href="#i-chevron"/></svg>
+              </button>
+            </h3>
+            <div class="job-body" id="job-abi">
+              <div>
+                <div class="job-inner">
+                  <ul class="metrics" aria-label="Highlights">
+                    <li><strong>+40%</strong> customer engagement</li>
+                  </ul>
+                  <ul class="points">
+                    <li>Designed a customer-facing <strong>chatbot</strong> on Microsoft Bot Framework that improved customer engagement by 40%.</li>
+                    <li>Built <strong>Power BI dashboards</strong> to monitor GitHub repositories and activity, improving visibility and supporting better decisions.</li>
+                  </ul>
+                  <ul class="chips" aria-label="Technologies"><li>Microsoft Bot Framework</li><li>Power BI</li></ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ TECH STACK ============ -->
+      <section id="stack" class="section" aria-labelledby="stack-title">
+        <h2 id="stack-title" class="display-2 reveal"><span>Tech</span><span class="dim">Stack</span></h2>
+        <p class="section-intro reveal">The models, frameworks and infrastructure I use to take AI from prototype to production.</p>
+
+        <div class="filters reveal" role="group" aria-label="Filter tools by category">
+          <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" type="button" data-filter="ai" aria-pressed="false">AI &amp; LLMs</button>
+          <button class="filter" type="button" data-filter="backend" aria-pressed="false">Backend</button>
+          <button class="filter" type="button" data-filter="cloud" aria-pressed="false">Cloud &amp; DevOps</button>
+          <button class="filter" type="button" data-filter="data" aria-pressed="false">Data &amp; ML</button>
+          <button class="filter" type="button" data-filter="bots" aria-pressed="false">Bots &amp; BI</button>
+        </div>
+        <p class="filter-count" id="filter-count" aria-live="polite">Showing all 28 tools</p>
+
+        <ul class="tools reveal">
+          <li class="tool" data-cat="ai"><span class="tool-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openai.svg" alt="" loading="lazy" onerror="this.parentNode.classList.add('no-icon')"><b>AI</b></span><span><span class="tool-name">OpenAI</span><span class="tool-kind">GPT-4o · Azure OpenAI</span></span></li>
+          <li class="tool" data-cat="ai"><span class="tool-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/googlegemini.svg" alt="" loading="lazy" onerror="this.parentNode.classList.add('no-icon')"><b>Ge</b></span><span><span class="tool-name">Google Gemini</span><span class="tool-kind">Gemini Live · Vertex AI</span></span></li>
+          <li class="tool" data-cat="ai"><span class="tool-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/anthropic.svg" alt="" loading="lazy" onerror="this.parentNode.classList.add('no-icon')"><b>An</b></span><span><span class="tool-name">Anthropic Claude</span><span class="tool-kind">Tool calling</span></span></li>
+          <li class="tool" data-cat="ai"><span class="tool-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/langchain.svg" alt="" loading="lazy" onerror="this.parentNode.classList.add('no-icon')"><b>LC</b></span><span><span class="tool-name">LangChain</span><span class="tool-kind">LLM orchestration</span></span></li>
+          <li class="tool" data-cat="ai"><span class="tool-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/langgraph.svg" alt="" loading="lazy" onerror="this.parentNode.classList.add('no-icon')"><b>LG</b></span><span><span class="tool-name">LangGraph</span><span class="tool-kind">Agent graphs</span></span></li>
+          <li class="tool" data-cat="ai"><span class="tool-icon no-icon"><b>MCP</b></span><span><span class="tool-name">ADK · MCP · A2A</span><span class="tool-kind">Agent frameworks &amp; protocols</span></span></li>
+          <li class="tool" data-cat="ai"><span class="tool-icon no-icon"><b>SK</b></span><span><span class="tool-name">Semantic Kernel</span><span class="tool-kind">Agentic document processing</span></span></li>
+          <li class="tool" data-cat="ai"><span class="tool-icon no-icon"><b>Pc</b></span><span><span class="tool-name">Pipecat</span><span class="tool-kind">Voice agent pipelines</span></span></li>
+          <li class="tool" data-cat="ai"><span class="tool-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/deepgram.svg" alt="" loading="lazy" onerror="this.parentNode.classList.add('no-icon')"><b>Dg</b></span><span><span class="tool-name">Deepgram</span><span class="tool-kind">Speech-to-text</span></span></li>
+          <li class="tool" data-cat="ai data"><span class="tool-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/huggingface.svg" alt="" loading="lazy" onerror="this.parentNode.classList.add('no-icon')"><b>HF</b></span><span><span class="tool-name">Hugging Face</span><span class="tool-kind">Models &amp; embeddings</span></span></li>
+          <li class="tool" data-cat="backend"><span class="tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" loading="lazy" onerror="this.parentNode.classList.add('no-icon')"><b>Py</b></span><span><span class="tool-name">Python</span><span class="tool-kind">asyncio · Pydantic</span></span></li>
+          <li class="tool" data-cat="backend"><span class="tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" alt="" loading="lazy" onerror="this.parentNode.classList.add('no-icon')"><b>FA</b></span><span><span class="tool-name">FastAPI</span><span class="tool-kind">REST &amp; WebSocket APIs</span></span></li>
+          <li class="tool" data-cat="backend"><span class="tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="" loading="lazy" onerror="this.parentNode.classList.add('no-icon')"><b>Jv</b></span><span><span class="tool-name">Java</span><span class="tool-kind">Language</span></span></li>
+          <li class="tool" data-cat="backend cloud"><span class="tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" alt="" loading="lazy" onerror="this.parentNode.classList.add('no-icon')"><b>Kf</b></span><span><span class="tool-name">Apache Kafka</span><span class="tool-kind">Event streaming</span></span></li>
+          <li class="tool" data-cat="backend data"><span class="tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" alt="" loading="lazy" onerror="this.parentNode.classList.add('no-icon')"><b>Rd</b></span><span><span class="tool-name">Redis</span><span class="tool-kind">Coordination · hot vector cache</span></span></li>
+          <li class="tool" data-cat="cloud"><span class="tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="" loading="lazy" onerror="this.parentNode.classList.add('no-icon')"><b>GC</b></span><span><span class="tool-name">Google Cloud</span><span class="tool-kind">Cloud Run · Vertex AI · Pub/Sub</span></span></li>
+          <li class="tool" data-cat="cloud"><span class="tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="" loading="lazy" onerror="this.parentNode.classList.add('no-icon')"><b>Az</b></span><span><span class="tool-name">Azure</span><span class="tool-kind">Functions · Logic Apps · AI Search</span></span></li>
+          <li class="tool" data-cat="cloud"><span class="tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain.svg" alt="" loading="lazy" onerror="this.parentNode.classList.add('no-icon')"><b>K8s</b></span><span><span class="tool-name">Kubernetes</span><span class="tool-kind">Orchestration</span></span></li>
+          <li class="tool" data-cat="cloud"><span class="tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="" loading="lazy" onerror="this.parentNode.classList.add('no-icon')"><b>Dk</b></span><span><span class="tool-name">Docker</span><span class="tool-kind">Containers</span></span></li>
+          <li class="tool" data-cat="cloud"><span class="tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/argocd/argocd-original.svg" alt="" loading="lazy" onerror="this.parentNode.classList.add('no-icon')"><b>Ar</b></span><span><span class="tool-name">Argo</span><span class="tool-kind">CI/CD · GitOps</span></span></li>
+          <li class="tool" data-cat="cloud"><span class="tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/datadog/datadog-original.svg" alt="" loading="lazy" onerror="this.parentNode.classList.add('no-icon')"><b>Dd</b></span><span><span class="tool-name">Datadog</span><span class="tool-kind">Observability</span></span></li>
+          <li class="tool" data-cat="cloud"><span class="tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="" loading="lazy" onerror="this.parentNode.classList.add('no-icon')"><b>GH</b></span><span><span class="tool-name">GitHub</span><span class="tool-kind">Version control · CI/CD</span></span></li>
+          <li class="tool" data-cat="data"><span class="tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="" loading="lazy" onerror="this.parentNode.classList.add('no-icon')"><b>Mg</b></span><span><span class="tool-name">MongoDB</span><span class="tool-kind">Atlas Vector Search</span></span></li>
+          <li class="tool" data-cat="data"><span class="tool-icon no-icon"><b>Vec</b></span><span><span class="tool-name">Vector search</span><span class="tool-kind">FAISS · Azure AI Search</span></span></li>
+          <li class="tool" data-cat="data"><span class="tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt="" loading="lazy" onerror="this.parentNode.classList.add('no-icon')"><b>Pd</b></span><span><span class="tool-name">Pandas</span><span class="tool-kind">Data wrangling · SQL</span></span></li>
+          <li class="tool" data-cat="data"><span class="tool-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" alt="" loading="lazy" onerror="this.parentNode.classList.add('no-icon')"><b>SL</b></span><span><span class="tool-name">scikit-learn</span><span class="tool-kind">Machine learning</span></span></li>
+          <li class="tool" data-cat="bots"><span class="tool-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/powerbi.svg" alt="" loading="lazy" onerror="this.parentNode.classList.add('no-icon')"><b>BI</b></span><span><span class="tool-name">Power BI</span><span class="tool-kind">Dashboards</span></span></li>
+          <li class="tool" data-cat="bots"><span class="tool-icon no-icon"><b>CS</b></span><span><span class="tool-name">Copilot Studio · Yellow AI</span><span class="tool-kind">Enterprise bots &amp; RPA</span></span></li>
+        </ul>
+      </section>
+
+      <!-- ============ ACHIEVEMENTS ============ -->
+      <section id="achievements" class="section" aria-labelledby="achievements-title">
+        <h2 id="achievements-title" class="display-2 reveal"><span>Certs &amp;</span><span class="dim">Recognition</span></h2>
+
+        <div class="wins">
+          <article class="win feature reveal">
+            <div class="win-rank win-badge" aria-hidden="true"><svg class="icon"><use href="#i-award"/></svg></div>
+            <div>
+              <p class="win-year">April 2025 · Microsoft</p>
+              <h3>Microsoft Certified: Azure AI Engineer Associate</h3>
+              <a class="win-link" href="https://learn.microsoft.com/api/credentials/share/en-gb/RaviKasaudhan-4931/5F29A29B4D350C8F?sharingId=58D4EDE4DB22EE20" target="_blank" rel="noopener">View credential <svg class="icon arrow"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <article class="win reveal">
+            <span class="win-icon"><svg class="icon"><use href="#i-cap"/></svg></span>
+            <p class="win-year">2019 — 2023</p>
+            <h3>B.Tech, Computer Science &amp; Engineering</h3>
+            <p>Vellore Institute of Technology, Tamil Nadu · CGPA 8.46</p>
+          </article>
+
+          <article class="win reveal">
+            <span class="win-icon"><svg class="icon"><use href="#i-award"/></svg></span>
+            <p class="win-year">Dec 2019</p>
+            <h3>COMPEX Scholarship</h3>
+            <p>Awarded by the Indian Embassy to study B.Tech CSE at VIT Vellore.</p>
+          </article>
+
+          <article class="win reveal">
+            <span class="win-icon"><svg class="icon"><use href="#i-code"/></svg></span>
+            <p class="win-year">March 2024 · Microsoft</p>
+            <h3>Azure Data Fundamentals</h3>
+            <a class="win-link" href="https://learn.microsoft.com/en-us/users/ravikasaudhan-4931/credentials/d8f964916b43bc2d" target="_blank" rel="noopener">View credential <svg class="icon arrow"><use href="#i-arrow"/></svg></a>
+          </article>
+
+          <article class="win reveal">
+            <span class="win-icon"><svg class="icon"><use href="#i-code"/></svg></span>
+            <p class="win-year">Dec 2023 · Microsoft</p>
+            <h3>Power BI Data Analyst Associate</h3>
+            <a class="win-link" href="https://learn.microsoft.com/en-us/users/ravikasaudhan-4931/credentials/3e79a973fa0a8e7f" target="_blank" rel="noopener">View credential <svg class="icon arrow"><use href="#i-arrow"/></svg></a>
+          </article>
+        </div>
+
+        <div class="beyond reveal">
+          <h3 class="beyond-title"><svg class="icon"><use href="#i-heart"/></svg> Beyond the code</h3>
+          <ul>
+            <li><strong>Member</strong><span>Rotaract Club of Central Lumbini, Nepal</span></li>
+            <li><strong>Program Facilitator</strong><span>"PAHUNCH" Project, Child Sensitive Social Protection (CSSP) · Community Family Welfare Association</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section id="contact" class="section" aria-labelledby="contact-title">
+        <h2 id="contact-title" class="display-2 reveal"><span>Let's Build</span><span class="dim">Together</span></h2>
+        <p class="section-intro reveal">Working on agents, RAG or voice AI? Send a note and I'll get back to you.</p>
+
+        <div class="contact-links reveal">
+          <div class="contact-link">
+            <a href="mailto:ravikasaudhan4923@gmail.com"><svg class="icon"><use href="#i-mail"/></svg> ravikasaudhan4923@gmail.com</a>
+            <button class="icon-btn" type="button" data-copy="ravikasaudhan4923@gmail.com" aria-label="Copy email address"><svg class="icon"><use href="#i-copy"/></svg></button>
+          </div>
+          <a class="contact-link" href="https://www.linkedin.com/in/ravi-kasaudhan/" target="_blank" rel="noopener"><svg class="icon"><use href="#i-linkedin"/></svg> LinkedIn</a>
+          <a class="contact-link" href="https://github.com/ravikasaudhan49" target="_blank" rel="noopener"><svg class="icon"><use href="#i-github"/></svg> GitHub</a>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" data-mailto="ravikasaudhan4923@gmail.com">
+          <div class="form-row">
+            <div class="field">
+              <label for="f-name">Name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-topic">I'd like to talk about</label>
+            <select id="f-topic" name="topic">
+              <option>A full-time opportunity</option>
+              <option>A contract or freelance project</option>
+              <option>A collaboration</option>
+              <option>Just saying hello</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-message">Message</label>
+            <textarea id="f-message" name="message" rows="5" placeholder="Tell me a little about it…" required></textarea>
+          </div>
+          <button class="btn btn-primary btn-lg" type="submit"><svg class="icon"><use href="#i-send"/></svg> Send message</button>
+          <p class="form-note">Opens your email app with the message ready to send.</p>
+        </form>
+      </section>
+
+      <footer class="footer">
+        <p>© <span data-year>2026</span> Ravi Kasaudhan · AI Engineer</p>
+        <a href="#home" class="to-top"><svg class="icon"><use href="#i-up"/></svg> Back to top</a>
+      </footer>
+    </main>
+  </div>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js" defer></script>
+</body>
+</html>
